@@ -10,6 +10,10 @@ public class Hello {
     }
 
     public String hi(boolean ok){
-        return "not right";
+        return "not  right";
+    }
+
+    public String hi2(boolean ok){
+        return "not  right again";
     }
 }
