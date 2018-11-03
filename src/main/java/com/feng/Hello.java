@@ -9,11 +9,4 @@ public class Hello {
         return "hello world";
     }
 
-    public String hi(boolean ok){
-        return "not  right";
-    }
-
-    public String hi2(boolean ok){
-        return "not  right again";
-    }
 }
