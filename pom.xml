@@ -6,7 +6,7 @@
 
     <groupId>www.feng.cicd</groupId>
     <artifactId>helloworld-sonar-jenkins</artifactId>
-    <version>1.1</version>
+    <version>1.4</version>
 
     <dependencies>
         <dependency>
