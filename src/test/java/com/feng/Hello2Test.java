@@ -13,4 +13,12 @@ public class Hello2Test {
 
         assertEquals(hello2.sayPapa("feng"), "feng");
     }
+
+    @Test
+    public void sayPapa_failed() {
+
+        Hello2 hello2 = new Hello2();
+
+        assertEquals(hello2.sayPapa(null), "mama");
+    }
 }
