@@ -19,6 +19,6 @@ public class Hello2Test {
 
         Hello2 hello2 = new Hello2();
 
-        assertEquals(hello2.sayPapa(null), "mama");
+        assertEquals(hello2.sayPapa(null), "papa");
     }
 }
