@@ -6,16 +6,15 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage('Test') {
-                    steps {
-                        sh 'mvn test'
-                    }
-                    post {
-                        always {
-                            junit 'target/surefire-reports/*.xml'
-                        }
-                    }
+         stage('build && SonarQube analysis') {
+            steps {
+                withSonarQubeEnv('sonarqube-6') {
+
+                   sh 'mvn clean package sonar:sonar'
+
                 }
+            }
+        }
     }
 }
 
